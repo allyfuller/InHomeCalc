@@ -2,33 +2,43 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Poplar's In-Home Calculator</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <title>Poplar In-home Calculator</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#mailingDate" ).datepicker({ beforeShowDay: $.datepicker.noWeekends });
+  } );
+  </script>
   </head>
   <body>
-    <div id="todaysDate">Today's Date: </div>
-<form>
-  <section>
-    <label>Mailing in</label>
-    <input id="leadTime" placeholder="number"></input>
-    <select id="leadTimeType">
-      <option value="days">Days</option>
-      <option value="weeks">Weeks</option>
-    </select>
-  </section>
-  <section>
-    <label>Postage:</label>
-    <select id="postageType">
+    
+    <form>
+    <h1>Poplar In-home Calculator</h1>
+    <section>
+    <label class="postage">Postage:</label>
+    <select id="postage">
       <option value="Standard">Standard</option>
       <option value="FirstClass">First-Class</option>
     </select>
-  </section>
-  <input class="button" id="calculateShippingEstimate" type="submit" value="Get Estimated Delivery Date"></input>
-  <div class="results"></div>
-</form>
-  
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-<script src="index.js"></script>
+      
+      <section>
+        <label class="mailing">Mailing on:</label>
+        <input id="mailingDate"></input>
+      </section>
+    
+    <section>
+      
+    </section>
+    
+    <section>
+      <label class="estimate">Delivery Estimate:</label>
+      <div class="results"></div>
+    </section>
+      
+    </form>
+    <button onClick="window.location.reload();">Refresh</button>
   </body>
 </html>

@@ -1,0 +1,51 @@
+body {
+    background-color: #EAFBF2;
+    font-family: 'Roboto Condensed';
+    color: #ffffff;
+  }
+  
+  form {
+    margin: 0 auto;
+    background-color: #2AA373;
+    padding: 10px 50px 30px;
+    text-align: center;
+    width: 300px;
+    border-radius: 20px;
+  }
+  
+  section {
+    margin-top: 20px;
+  }
+  
+  label {
+    margin-right: 8px;
+  }
+  
+  div.results {
+    height: 75px;
+    padding-top: 30px;
+    font-size: 24px;
+  }
+  
+  #postage,
+  #mailingDate {
+    padding: 3px 10px;
+    width: 100px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: solid white 1px;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    color: #ffffff;
+  }
